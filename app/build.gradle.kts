@@ -40,6 +40,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":processor"))
     ksp(project(":processor"))
 
     implementation("androidx.core:core-ktx:1.9.0")
