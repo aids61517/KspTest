@@ -13,6 +13,13 @@ import android.view.MenuItem
 import android.view.ViewGroup
 import com.aids61517.ksptest.databinding.ActivityMainBinding
 import com.aids61517.processor.annotation.TestClassAnnotation
+import com.aids61517.processor.annotation.TestClassAnnotationWithArgument
+
+@TestClassAnnotationWithArgument("myAmazing")
+interface MyAmazingFunction {
+    val arg1: String
+    val arg2: Map<String, List<*>>
+}
 
 @TestClassAnnotation
 class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
