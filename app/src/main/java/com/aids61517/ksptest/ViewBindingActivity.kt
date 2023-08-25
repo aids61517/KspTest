@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 import com.aids61517.processor.annotation.TestClassAnnotation
+import com.aids61517.processor.annotation.ViewBindingClassAnnotation
 
-@TestClassAnnotation
+@ViewBindingClassAnnotation
 abstract class ViewBindingActivity<T : ViewBinding> : AppCompatActivity() {
 
     protected val binding: T
