@@ -21,6 +21,18 @@ interface MyAmazingFunction {
     val arg2: Map<String, List<*>>
 }
 
+@TestClassAnnotationWithArgument("myAmazing2")
+interface MyAmazingFunction2 {
+    val arg1: String
+    val arg2: Map<String, List<*>>
+}
+
+@TestClassAnnotationWithArgument("myAmazing3")
+interface MyAmazingFunction3 {
+    val arg1: String
+    val arg2: Map<String, List<*>>
+}
+
 @TestClassAnnotation
 class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
 

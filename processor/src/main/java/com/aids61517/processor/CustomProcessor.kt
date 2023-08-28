@@ -85,7 +85,7 @@ class CustomProcessor(
 
             val properties: Sequence<KSPropertyDeclaration> = classDeclaration.getAllProperties()
                 .filter { it.validate() }
-            sink.writeUtf8("fun functionName(\n")
+            sink.writeUtf8("fun get$classDeclaration(\n")
             properties.forEach {
                 logger.info("property before filter = $it")
                 visitPropertyDeclaration(it, data)
