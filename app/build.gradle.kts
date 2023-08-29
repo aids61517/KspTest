@@ -40,6 +40,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":model"))
     implementation(project(":processor"))
     ksp(project(":processor"))
 

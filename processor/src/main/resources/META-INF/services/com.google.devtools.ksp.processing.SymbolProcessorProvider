@@ -1,1 +1,2 @@
-com.aids61517.processor.CustomProcessorProvider
+#com.aids61517.processor.CustomProcessorProvider
+com.aids61517.processor.genconfig.GenConfigProcessorProvider
