@@ -23,3 +23,4 @@ dependencyResolutionManagement {
 rootProject.name = "KspTest"
 include(":app")
 include(":processor")
+include(":model")
