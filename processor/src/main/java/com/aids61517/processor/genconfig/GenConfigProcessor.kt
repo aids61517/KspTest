@@ -72,7 +72,7 @@ class GenConfigProcessor(
                         .build()
                         .writeTo(
                             codeGenerator = codeGenerator,
-                            dependencies = Dependencies(false),
+                            dependencies = Dependencies(false, classDeclaration.containingFile!!),
                         )
                 }
             }
